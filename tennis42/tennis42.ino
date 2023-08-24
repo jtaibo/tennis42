@@ -1,10 +1,5 @@
 #include <Wire.h>//Include the Wire library to talk I2C
-
-//This is the I2C Address of the MCP4725, by default (A0 pulled to GND).
-//Please note that this breakout is for the MCP4725A0. 
-//For devices with A0 pulled HIGH, use 0x61
-#define MCP4725_ADDR1 0x60
-#define MCP4725_ADDR2 0x61
+#include "pinout.h"
 
 struct Vec2i {
   int x;
